@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 
-import ExportScreen from '../project/calculator/index';
+import ExportScreen from './Lab2/project1';
 
 const AppContainer = () => {
   return (
