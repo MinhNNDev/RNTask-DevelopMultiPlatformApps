@@ -1,14 +1,9 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 
-import ExportScreen from './Lab2/project1';
+import ExportScreen from './navigator';
 
-const AppContainer = () => {
-  return (
-    <NavigationContainer>
-      <ExportScreen />
-    </NavigationContainer>
-  );
+const App = () => {
+  return <ExportScreen />;
 };
 
-export default AppContainer;
+export default App;

@@ -1,8 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import HomeScreen from '../project/calculator/index';
-import ManageScreen from '../project/manage/index';
+import HomeScreen from '../screen/Home';
+import ProfileScreen from '../screen/Profile';
 
 const homeStack = createStackNavigator();
 
@@ -12,12 +12,12 @@ const HomeStackScreen = () => {
       <homeStack.Screen
         name="Home"
         component={HomeScreen}
-        options={{headerShown: false}}
+        options={{title: 'Home'}}
       />
       <homeStack.Screen
-        name="Manage"
-        component={ManageScreen}
-        options={{headerShown: false}}
+        name="Profile"
+        component={ProfileScreen}
+        options={{title: 'Profile'}}
       />
     </homeStack.Navigator>
   );
